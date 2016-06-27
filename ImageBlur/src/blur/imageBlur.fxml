@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.8929765886287625" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="600.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blur.ImageController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="450.0" prefWidth="892.0">
+         <children>
+            <ImageView fx:id="imageFrame" fitHeight="463.0" fitWidth="862.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="160.0">
+         <children>
+            <Slider fx:id="blurLevel" blockIncrement="1.0" layoutX="27.0" layoutY="5.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" prefHeight="10.0" prefWidth="641.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+            <Label fx:id="levelValue" layoutX="730.0" layoutY="8.0" text="Label" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
